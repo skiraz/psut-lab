@@ -1,0 +1,23 @@
+conda create -n tf-gpu tensorflow-gpu
+conda activate tf-gpu
+
+conda install -c anaconda ipykernel
+
+python -m ipykernel install --user
+
+pip install numpy==1.21.00
+
+pip install jupyterlab
+
+juypter lab
+
+
+
+
+
+
+
+
+test code
+import tensorflow as tf
+print(tf.config.list_physical_devices('GPU'))
